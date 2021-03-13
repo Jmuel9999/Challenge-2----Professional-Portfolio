@@ -1,0 +1,158 @@
+:root {
+  --primary-color: rgb(92, 89, 89);
+  --secondary-color: rgb(226, 217, 217);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*body class placeholder*/
+/*Start header style*/
+.header {
+  padding: 5px 15px 10px 25px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.header h1 {
+  font-weight: bold;
+  font-size: 42px;
+  color: var(--secondary-color);
+  margin: 15px;
+}
+
+.header nav {
+  margin: 7px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.aboutme {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  width: 3px;
+}
+
+.work {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  width: 3px;
+}
+
+.contactme {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  width: 3px;
+}
+
+.resume {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  width: 3px;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.header nav ul li a {
+  padding: 10px 15px 10px 15px;
+  font-weight: lighter;
+  font-size: 1.75vw;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.header nav ul li a:hover {
+  background: rgb(14, 9, 9);
+  border-radius: 10px;
+  text-shadow: none;
+}
+/*End header style*/
+
+/*Footer style start*/
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: var(--primary-color);
+  width: 100%;
+  padding: 40px 35px;
+}
+
+footer h2 {
+  color: var(--secondary-color);
+  font-size: 42px;
+}
+
+footer nav {
+  margin: 7px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+footer nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+
+footer nav ul li a:hover {
+  background: rgb(14, 9, 9);
+  border-radius: 10px;
+  text-shadow: none;
+}
+
+/*Footer style End*/
+
+/*Hero style start*/
+
+.hero {
+  padding: 90px;
+  background-image: url(./background.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-position: 80%;
+}
+
+.hero h2 {
+  font-size: 33px;
+  color: rgb(14, 9, 9);
+}
+
+/*Hero style end*/
