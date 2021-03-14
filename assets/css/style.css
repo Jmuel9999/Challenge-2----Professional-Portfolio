@@ -42,29 +42,29 @@ body {
   list-style: none;
 }
 
-.aboutmea {
+/*.aboutme a {
   border-bottom-style: solid;
   border-bottom-width: 3px;
   width: 3px;
 }
 
-.worka {
+.work a {
   border-bottom-style: solid;
   border-bottom-width: 3px;
   width: 3px;
 }
 
-.contactmea {
+.contactme a {
   border-bottom-style: solid;
   border-bottom-width: 3px;
   width: 3px;
 }
 
-.resumea {
+.resume a {
   border-bottom-style: solid;
   border-bottom-width: 3px;
   width: 3px;
-}
+}*/
 
 .header nav ul {
   display: flex;
@@ -143,8 +143,8 @@ footer nav ul li a:hover {
 /*Hero style start*/
 
 .hero {
-  padding: 90px 90px 25px 90px;
-  background-image: url(./background.jpg);
+  padding: 175px 90px 25px 90px;
+  background-image: url("../images/background.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -164,27 +164,49 @@ footer nav ul li a:hover {
 
 /*About Me style start*/
 
-.aboutme {
-  padding: 20px;
+.myphoto-div {
+  padding: 5px;
+  margin-left: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.aboutme article {
+.myphoto {
+  height: 250px;
+  width: 250px;
+}
+
+.info-section {
+  padding: 20px;
   font-size: 20px;
   display: flex;
-  flex-wrap: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: left;
   margin: 0 auto;
+  line-height: 1.5;
+}
+
+.aboutme h2 {
+  padding: 35px;
+  margin-bottom: 0;
 }
 
 .work-container {
-  height: 100vw;
-  width: 100vw;
   display: grid;
-  gap: 15px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1.5fr);
+  height: 100vw;
+  width: 100vw;
+  gap: 15px;
   border: 1px solid blue;
+}
+
+.top-work-container {
+  grid-column: 1/3;
+  background-image: url(../images/runbuddycsschall2.PNG);
+  border: 1px solid black;
 }
 
 .bottom-work-container {
@@ -194,10 +216,4 @@ footer nav ul li a:hover {
   border: 1px solid pink;
   display: grid;
   grid-template-rows: 1fr 1fr;
-}
-
-.top-work-container {
-  grid-column: 1/3;
-  background-image: url(./Images/runbuddycsschall2.PNG);
-  border: 1px solid black;
 }
