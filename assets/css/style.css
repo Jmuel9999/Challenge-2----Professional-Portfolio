@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 65px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -41,30 +45,6 @@ body {
   align-items: center;
   list-style: none;
 }
-
-/*.aboutme a {
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
-  width: 3px;
-}
-
-.work a {
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
-  width: 3px;
-}
-
-.contactme a {
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
-  width: 3px;
-}
-
-.resume a {
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
-  width: 3px;
-}*/
 
 .header nav ul {
   display: flex;
@@ -162,38 +142,78 @@ footer nav ul li a:hover {
 
 /*Hero style end*/
 
-/*About Me style start*/
+/*Work-container about me style start*/
 
-.myphoto-div {
-  padding: 5px;
-  margin-left: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.main-container {
+  margin-left:50px;
+  margin-right:50px;
+  max-width: 88%;
 }
 
-.myphoto {
-  height: 250px;
-  width: 250px;
-}
-
-.info-section {
-  padding: 20px;
+.work-container {
+  padding: 20px 20px 55px 20px;
   font-size: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  text-align: left;
+  justify-content: space-between;
+  align-items: right;/*fjdklsjfklds*/
   margin: 0 auto;
   line-height: 1.5;
 }
 
-.aboutme h2 {
-  padding: 35px;
-  margin-bottom: 0;
+.myphoto-div {
+  width: 0%;
+  padding: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
-.work-container {
+.myphoto {
+  height: 250px;
+  width: 240px;
+}
+
+.work-container article {
+  width: 72%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: right;
+}
+
+.work-container h2 {
+  padding: 35px;
+  margin-bottom: 0;
+  border-right: 3px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+article p {
+  padding-left: 320px;
+}
+
+/*Work-container about me style end
+
+/*Work-container Work style start*/
+
+.work-flex div {
+  width: 72%;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projectname {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+
+
+
+/*.work-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1.5fr);
@@ -216,4 +236,4 @@ footer nav ul li a:hover {
   border: 1px solid pink;
   display: grid;
   grid-template-rows: 1fr 1fr;
-}
+}*/
